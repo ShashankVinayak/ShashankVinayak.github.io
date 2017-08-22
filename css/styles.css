@@ -1,0 +1,275 @@
+html {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background-color: #FAFAFA;
+    height: inherit;
+}
+
+.main {
+    height: inherit;
+}
+
+.sideBar {
+    position: fixed;
+    float: left;
+    width: 22%;
+    height: inherit;
+    background-color: #9E9E9E;
+}
+
+.nameBar {
+    background-color: #757575;
+    height: 6%;
+}
+
+.nameBar p {
+    font-size: 1.75em;
+    font-weight: 600;
+    padding: 1%;
+    color: #F5F5F5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navigationWrap {
+    height: 94%;
+}
+
+.navigation {
+    padding-top: 60%;
+}
+
+.navigation ul a {
+    text-decoration: none;
+}
+
+.navList {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #FAFAFA;
+    font-family: 'Text Me One', sans-serif;
+    background-color: #757575;
+}
+
+.selected {
+    background-color: #FAFAFA;
+    color: #757575;
+    font-size: 1.5em;
+}
+
+.contentWrap {
+    float: right;
+    width: 78%;
+    height: inherit;
+}
+
+.contentWrap::after {
+    content: "";
+    clear: both;
+}
+
+.contentHolder {
+    height: 100%;
+    padding: 2%;
+}
+
+.profilePage,
+.skillPage,
+.projectPage {
+    height: inherit;
+    padding: 0.5%;
+}
+
+.education {
+    padding: 0.5%;
+    height: 32%;
+}
+
+.work,
+.interests {
+    padding: 0.5%;
+    height: 34%;
+}
+
+.education header,
+.work header,
+.interests header {
+    /* height: 23%; */
+    padding: 1%;
+}
+
+.education header p,
+.work header p,
+.interests header p {
+    font-family: 'Cantora One', sans-serif;
+    font-size: 2em;
+    color: #757575;
+    text-align: center;
+}
+
+.education header p i,
+.work header p i,
+.interests header p i {
+    padding-right: 1%;
+}
+
+.education article {
+    /* height: 77%; */
+    padding: 0.5% 1% 1% 7%;
+}
+
+.work article,
+.interests article {
+    /* height: 77%; */
+    padding: 1% 1% 1% 7%;
+}
+
+.education article p,
+.work article p,
+.interests article p {
+    padding: 0.75%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #9E9E9E;
+    text-align: center;
+}
+
+.subSkillsDesign {
+    height: 40%;
+    padding: 1%;
+}
+
+.subSkillsProg {
+    height: 20%;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.right::after {
+    content: "";
+    clear: both;
+}
+
+.skill {
+    padding: 0.5%;
+    height: 45%;
+}
+
+.skillTitle {
+    font-family: 'Cantora One', sans-serif;
+    font-size: 1.75em;
+    color: #757575;
+    text-align: center;
+}
+
+.skillPercentageBackground {
+    margin: 2% 4% 3% 0%;
+    padding: 2%;
+    width: 96%;
+    background-color: #9E9E9E;
+}
+
+.skillPercentageBarBackground {
+    width: 100%;
+    height: 100%;
+    background-color: #BDBDBD;
+}
+
+.skillPercentageBar {
+    height: 100%;
+    background-color: #F5F5F5;
+    color: #F5F5F5;
+}
+
+.jsBar {
+    width: 60%;
+}
+
+.cssBar {
+    width: 70%;
+}
+
+.htmlBar {
+    width: 70%;
+}
+
+.psBar {
+    width: 30%;
+}
+
+.blenderBar {
+    width: 45%;
+}
+
+.unityBar {
+    width: 45%;
+}
+
+.javaBar {
+    width: 50%;
+}
+
+.cBar {
+    width: 50%;
+}
+
+.box {
+    height: 50%;
+    padding: 0.5%;
+}
+
+.project {
+    height: 100%;
+    padding: 1%;
+    width:50%;
+    text-align: center;
+}
+
+.project img {
+    box-shadow: 0px 0px 5px 5px #E0E0E0;
+}
+
+.project p {
+    padding: 1%;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 1.75em;
+    color: #757575;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
