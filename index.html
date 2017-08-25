@@ -1,178 +1,191 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>Portfolio</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cantora+One|Oswald|Text+Me+One" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Portfolio</title>
 
-    </head>
-    <body>
-        <section class="main">
-            <aside class="sideBar">
-                <section class="nameBar">
-                     <p>SHASHANK VINAYAK</p> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantora+One|Oswald|Text+Me+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <section class="main">
+        <aside class="side-bar">
+            <section class="name-bar">
+                <p class="name">SHASHANK VINAYAK</p>
+            </section>
+            <section class="navigation-wrap">
+                <section class="navigation">
+                    <ul>
+                        <li class="nav-list-item">PROFILE</li>
+                        <li class="nav-list-item selected">SKILLS</li>
+                        <li class="nav-list-item">PROJECTS</li>
+                    </ul>
                 </section>
-                <section class="navigationWrap">
-                    <section class="navigation">
-                        <ul>
-                            <a href="#profileSection"><li class="navList">PROFILE</li></a>
-                            <a href="#skillSection"><li class="navList ">SKILLS</li></a>
-                            <a href="#"><li class="navList selected">PROJECTS</li></a>
-                        </ul>
+            </section>
+        </aside>
+        <section class="content-wrap">
+            <section class="content-holder">
+                <section class="page hide" id="profile-section">
+                    <section class="profile-page-divs">
+                        <header class="profile-page-header">
+                            <p class="profile-page-heading"><i class="fa fa-graduation-cap profile-page-icon" aria-hidden="true"></i>EDUCATION</p>
+                        </header>
+                        <article class="profile-page-article">
+                            <p class="profile-page-article-desc">2012 - 2016</p>
+                            <p class="profile-page-article-desc">B.E | Computer Science and Engineering </p>
+                            <p class="profile-page-article-desc">B.M.S College of Engineering</p>
+                            <!-- <p>CGPA : 9.3</p> -->
+                        </article>
+                    </section>
+                    <section class="profile-page-divs">
+                        <header class="profile-page-header">
+                            <p class="profile-page-heading"><i class="fa fa-briefcase profile-page-icon" aria-hidden="true"></i>WORK EXPERIENCE</p>
+                        </header>
+                        <article class="profile-page-article">
+                            <p class="profile-page-article-desc">2016 - Present</p>
+                            <p class="profile-page-article-desc">System Engineer I</p>
+                            <p class="profile-page-article-desc">Hewlett Packard Entriprise</p>
+                        </article>
+                    </section>
+                    <section class="profile-page-divs">
+                        <header class="profile-page-header">
+                            <p class="profile-page-heading"><i class="fa fa-heart profile-page-icon" aria-hidden="true"></i>INTERESTS</p>
+                        </header>
+                        <article class="profile-page-article">
+                            <p class="profile-page-article-desc">Web Development</p>
+                            <p class="profile-page-article-desc">Game Development</p>
+                        </article>
                     </section>
                 </section>
-            </aside>
-            <section class="contentWrap">
-                <section class="contentHolder">
-                    <section class="profilePage hide" id="profileSection">
-                        <section class="education">
-                            <header>
-                                <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>EDUCATION</p>
-                            </header>
-                            <article>
-                                <p>2012 - 2016</p>
-                                <p>B.E | Computer Science and Engineering </p>
-                                <p>B.M.S College of Engineering</p>
-                                <!-- <p>CGPA : 9.3</p> -->
+                <section class="page" id="skills-section">
+                    <article class="skills-page-design-divs">
+                        <section class="skills-page-left-divs float-left">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">JAVASCRIPT</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar js-bar">.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">CSS3</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar css-bar">.</div>
+                                    </div>
+                                </div>
                             </article>
                         </section>
-                        <section class="work">
-                            <header>
-                                <p><i class="fa fa-briefcase" aria-hidden="true"></i>WORK EXPERIENCE</p>
-                            </header>
-                            <article>
-                                <p>2016 - Present</p>
-                                <p>System Engineer I</p>
-                                <p>Hewlett Packard Entriprise</p>
+                        <section class="skills-page-right-divs float-right">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">HTML5</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar html-bar">.</div>
+                                    </div>
+                                </div>
                             </article>
                         </section>
-                        <section class="interests">
-                            <header>
-                                <p><i class="fa fa-heart" aria-hidden="true"></i>INTERESTS</p>
-                            </header>
-                            <article>
-                                <p>Web Development</p>
-                                <p>Game Development</p>
+                    </article>
+                    <article class="skills-page-design-divs">
+                        <section class="skills-page-left-divs float-left">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">BLENDER 3D</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar blender-bar">.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">PHOTOSHOP</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar ps-bar">.</div>
+                                    </div>
+                                </div>
                             </article>
                         </section>
-                    </section>
-                    <section class="skillPage hide" id="skillSection">
-                        <article class="subSkillsDesign">
-                            <section class="left">
-                                <article class="skill">
-                                    <p class="skillTitle">JAVASCRIPT</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar jsBar">.</div>
-                                        </div>
+                        <section class="skills-page-right-divs float-right">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">UNITY 3D</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar unity-bar">.</div>
                                     </div>
-                                </article>
-                                <article class="skill">
-                                    <p class="skillTitle">CSS3</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar cssBar">.</div>
-                                        </div>
+                                </div>
+                            </article>
+                        </section>
+                    </article>
+                    <article class="skills-page-programme-divs">
+                        <section class="skills-page-left-divs float-left">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">JAVA</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar java-bar">.</div>
                                     </div>
-                                </article>
-                            </section>
-                            <section class="right">
-                                <article class="skill">
-                                    <p class="skillTitle">HTML5</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar htmlBar">.</div>
-                                        </div>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="skills-page-right-divs float-right">
+                            <article class="skills-page-divs">
+                                <p class="skills-page-title">C</p>
+                                <div class="skill-percentage-background">
+                                    <div class="skill-percentage-bar-background">
+                                        <div class="skill-percentage-bar c-bar">.</div>
                                     </div>
-                                </article>
-                            </section>
+                                </div>
+                            </article>
+                        </section>
+                    </article>
+                </section>
+                <section class="page hide" id="project-section">
+                    <section class="project-page-divs">
+                        <article class="project float-left">
+                            <a href="https://play.google.com/store/apps/details?id=com.CuriousCrunch.CubeDown" target="_blank">
+                                <img src="images\CubeDown.png" width="300px" height="175px" class="project-image">
+                            </a>
+                            <p class="project-desc">CUBE DOWN</p>
+                            <p class="project-desc small-font">2 Player Android Game</p>
                         </article>
-                        <article class="subSkillsDesign">
-                            <section class="left">
-                                <article class="skill">
-                                    <p class="skillTitle">BLENDER 3D</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar blenderBar">.</div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="skill">
-                                    <p class="skillTitle">PHOTOSHOP</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar psBar">.</div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </section>
-                            <section class="right">
-                                <article class="skill">
-                                    <p class="skillTitle">UNITY 3D</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar unityBar">.</div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </section>
-                        </article>
-                        <article class="subSkillsProg">
-                            <section class="left">
-                                <article class="skill">
-                                    <p class="skillTitle">JAVA</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar javaBar">.</div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </section>
-                            <section class="right">
-                                <article class="skill">
-                                    <p class="skillTitle">C</p>
-                                    <div class="skillPercentageBackground">
-                                        <div class="skillPercentageBarBackground">
-                                            <div class="skillPercentageBar cBar">.</div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </section>
+                        <article class="project float-right">
+                            <a href="https://play.google.com/store/apps/details?id=com.CuriousCrunch.MathTussle" target="_blank">
+                                <img src="images\MathTussle.png" width="300px" height="175px" class="project-image">
+                            </a>
+                            <p class="project-desc">MATH TUSSLE</p>
+                            <p class="project-desc small-font">Simple Math Game</p>
                         </article>
                     </section>
-                    <section class="projectPage" id="projectSection">
-                        <section class="box">
-                            <article class="project float-left">
-                                <img src="images\CubeDown.png" width="300px" height="175px">
-                                <p>CUBE DOWN</p>
-                                <p>2 Player Android Game</p>
-                            </article>
-                            <article class="project float-right">
-                                <img src="images\MathTussle.png" width="300px" height="175px">
-                                <p>MATH TUSSLE</p>
-                                <p>Simple Math Game</p>
-                            </article>
-                        </section>
-                        <section class="box">
-                            <article class="project float-left">
-                                <img src="images\Streak.png" width="300px" height="175px">
-                                <p>STREAK</p>
-                                <p>Infinte Runner</p>
-                            </article>
-                            <article class="project float-right">
-                                <img src="images\ToDo.png" width="300px" height="175px">
-                                <p>TO-DO</p>
-                                <p>Tiny todo web app</p>
-                            </article>
-                        </section>
+                    <section class="project-page-divs">
+                        <article class="project float-left">
+                            <a href="https://play.google.com/store/apps/details?id=com.CuriousCrunch.Streak" target="_blank">
+                                <img src="images\Streak.png" width="300px" height="175px" class="project-image">
+                            </a>
+                            <p class="project-desc">STREAK</p>
+                            <p class="project-desc small-font">Infinte Runner</p>
+                        </article>
+                        <article class="project float-right">
+                            <a href="https://github.com/ShashankVinayak/todos" target="_blank">
+                                <img src="images\ToDo.png" width="300px" height="175px" class="project-image">
+                            </a>
+                            <p class="project-desc">TO-DO</p>
+                            <p class="project-desc small-font">Tiny todo web app</p>
+                        </article>
                     </section>
                 </section>
             </section>
         </section>
-    </body>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>
