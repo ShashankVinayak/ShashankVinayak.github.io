@@ -82,6 +82,9 @@ body {
 .page {
     height: inherit;
     padding: 0.5%;
+    animation-name: page-fade-in;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
 }
 
 .profile-page-divs {
@@ -173,26 +176,41 @@ body {
 }
 
 .js-bar {
-    width: 60%;
+    width:65%;
+    animation-name: js-bar-fill;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .css-bar,
 .html-bar {
-    width: 70%;
+    width: 75%;
+    animation-name: htmlcss-bar-fill;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .ps-bar {
     width: 30%;
+    animation-name: ps-bar-fill;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .blender-bar,
 .unity-bar {
-    width: 45%;
+    width: 40%;
+    animation-name: blenderunity-bar-fill;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .java-bar,
 .c-bar {
     width: 50%;
+    animation-name: blendercjava-bar-fill;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 
 .project-page-divs {
@@ -241,4 +259,66 @@ body {
     background-color: #FAFAFA;
     color: #757575;
     font-size: 1.5em;
+}
+
+/* ANIMATIONS */
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes js-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes htmlcss-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes ps-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes blenderunity-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes cjava-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
 }

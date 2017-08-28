@@ -25,21 +25,23 @@ var main = function () {
             if (event.target === navSelected) {
                 console.log("Nothing to do here!!! Clicked on already selected element");
             } else if (event.target === navObject.profileNav) {
-                navListItemClicked(navObject.profileNav);
-                changeDisplay(pageObject.profilePage);
+                updateDisplay(navObject.profileNav, pageObject.profilePage);
             } else if (event.target === navObject.skillsNav) {
-                navListItemClicked(navObject.skillsNav);
-                changeDisplay(pageObject.skillsPage);
+                updateDisplay(navObject.skillsNav, pageObject.skillsPage);
             } else if (event.target === navObject.projectsNav) {
-                navListItemClicked(navObject.projectsNav);
-                changeDisplay(pageObject.projectsPage);
+                updateDisplay(navObject.projectsNav, pageObject.projectsPage);
             } else {
                 console.log("Something went wrong! Clicked something else: " + event.target);
             }
         }
     });
 
-    var navListItemClicked = function (ele) {
+    var updateDisplay = function(navItemClicked, pageToDisplay){
+        highlighNavListItemClicked(navItemClicked);
+        changeDisplay(pageToDisplay);
+    };
+
+    var highlighNavListItemClicked = function (ele) {
         navSelected.classList.remove('selected');
         ele.classList.add('selected');
         navSelected = ele;
