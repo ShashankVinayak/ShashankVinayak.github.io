@@ -1,0 +1,348 @@
+body {
+    background-color: #FAFAFA;
+}
+
+/* NAV SECTION */
+
+.portfolio-name-holder {
+    height: 60px;
+    background-color: #757575;
+}
+
+.portfolio-remove-margin {
+    margin: 0;
+}
+
+.portfolio-name {
+    font-size: 200%;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'Cantora One', sans-serif;
+    font-weight: 600;
+    color: #F5F5F5;
+}
+
+.portfolio-menu-holder {
+    margin-top: 0.5%;
+    height: 50px;
+    background-color: #9E9E9E;
+}
+
+.portfolio-menu {
+    padding: 0.4em !important;
+    text-align: center;
+}
+
+.portfolio-menu-link {
+    font-size: 100%;
+    font-family: 'Text Me One', sans-serif;
+    font-weight: 500;
+    color: #FAFAFA;
+    background-color: #757575;
+}
+
+.portfolio-menu-link:hover {
+    color: #757575;
+    background-color: #FAFAFA;
+}
+
+.portfolio-menu-link-selected {
+    font-size: 110%;
+    color: #757575;
+    background-color: #FAFAFA;
+}
+
+/* PROFILE SECTION */
+
+#portfolio-profile {
+    animation: section-fade-in 1.2s ease-out;
+}
+
+.portfolio-profile-holder {
+    margin-top: 30%;
+}
+
+.portfolio-icons {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* .portfolio-profile-description-holder {} */
+
+.portfolio-profile-description {
+    margin: 0.5%;
+    padding: 0.5%;
+    font-size: 125%;
+    font-family: 'Cantora One', sans-serif;
+    color: #9E9E9E;
+}
+
+.portfolio-small-font {
+    font-size: 75%;
+}
+
+/* SKILLS SECTION */
+
+#portfolio-skills {
+    margin-top: 2%;
+    animation: section-fade-in 1.2s ease-out;
+}
+
+.portfolio-skill-holder {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.portfolio-percentage-holder{
+    position: relative;
+    margin: 4%;
+}
+
+.portfolio-percentage-bar-background {
+    height: 10px;
+    width: 100%;
+    background-color: #9E9E9E;
+}
+
+.portfolio-percentage-bar{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 20px;
+    background-color: #BDBDBD;
+}
+
+.portfolio-javascript-percentage {
+    width: 65%;
+    animation: js-bar-fill 1.5s ease-out;
+}
+
+.portfolio-html-percentage {
+    width: 80%;
+    animation: html-bar-fill 1.5s ease-out;
+}
+
+.portfolio-css-percentage {
+    width: 80%;
+    animation: css-bar-fill 1.5s ease-out;
+}
+
+.portfolio-blender3d-percentage {
+    width: 55%;
+    animation: blender3d-bar-fill 1.5s ease-out;
+}
+
+.portfolio-unity3d-percentage {
+    width: 45%;
+    animation: unity3d-bar-fill 1.5s ease-out;
+}
+
+.portfolio-photoshop-percentage {
+    width: 45%;
+    animation: photoshop-bar-fill 1.5s ease-out;
+}
+
+.portfolio-java-percentage {
+    width: 60%;
+    animation: java-bar-fill 1.5s ease-out;
+}
+
+.portfolio-c-percentage {
+    width: 60%;
+    animation: c-bar-fill 1.5s ease-out;
+}
+
+/* PROJECTS SECTION */
+
+#portfolio-projects {
+    animation: section-fade-in 1.2s ease-out;
+}
+
+.portfolio-project-link {
+    text-decoration: none;
+}
+
+.portfolio-project-holder {
+    margin-top:30%;
+}
+
+.portfolio-project-images{
+    margin: 4%;
+    border: 5px solid #9E9E9E;
+}
+
+.portfolio-footer {
+    font-family: 'Cantora One', sans-serif;
+    font-weight: 400;
+    color: #757575;
+}
+
+.portfolio-project-description{
+    font-size: 130%;
+}
+
+/* COMMON STYLES */
+
+.portfolio-header {
+    font-family: 'Cantora One', sans-serif;
+    color: #757575;
+}
+
+.portfolio-align-center {
+    text-align: center;
+}
+
+.portfolio-hide {
+    display: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes section-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes js-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes html-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes css-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes blender3d-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes unity3d-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes photoshop-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes java-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes c-bar-fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+/* MEDIA QUERIES  */
+/* FOR LARGE SCREEN */
+@media screen and (max-width: 79.99em) {
+    .portfolio-name {
+        font-size: 150%;
+        line-height: 60px;
+        text-align: center;
+        font-family: 'Cantora One', sans-serif;
+        font-weight: 600;
+        color: #F5F5F5;
+    }
+}
+
+/* FOR MEDIUM SCREEN */
+@media screen and (max-width: 63.99em) {
+    .portfolio-name {
+        font-size: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-family: 'Cantora One', sans-serif;
+        font-weight: 600;
+        color: #F5F5F5;
+    }
+
+    .portfolio-profile-holder {
+        margin-top: 10%;
+    }
+
+    .portfolio-project-holder {
+        margin-top:10%;
+    }
+}
+
+/* FOR SMALL SCREEN */
+@media screen and (max-width: 47.99em) {
+    .portfolio-name {
+        font-size: 200%;
+        line-height: 60px;
+        text-align: center;
+        font-family: 'Cantora One', sans-serif;
+        font-weight: 600;
+        color: #F5F5F5;
+    }
+
+    .portfolio-menu-holder {
+        margin-top: 0;
+        height: 50px;
+        background-color: #9E9E9E;
+    }
+
+    .portfolio-profile-holder {
+        margin-top: 15%;
+    }
+
+    .portfolio-project-holder {
+        margin-top:15%;
+    }
+}
