@@ -1,12 +1,20 @@
+/* COLOR PALETTE
+
+#F45A64 - red - "Carnation"
+#FCFAFC - light blue grey - "Prim"
+#2F4D75 - dark blue - "San Juan"
+#345581 - dark blue(+1) - "Chambray"
+*/
+
 body {
-    background-color: #FAFAFA;
+    background-color: #FCFAFC;
 }
 
 /* NAV SECTION */
 
 .portfolio-name-holder {
     height: 60px;
-    background-color: #757575;
+    background-color: #2F4D75;
 }
 
 .portfolio-remove-margin {
@@ -19,13 +27,13 @@ body {
     text-align: center;
     font-family: 'Cantora One', sans-serif;
     font-weight: 600;
-    color: #F5F5F5;
+    color: #FCFAFC;
 }
 
 .portfolio-menu-holder {
     margin-top: 0.5%;
     height: 50px;
-    background-color: #9E9E9E;
+    background-color: #345581;
 }
 
 .portfolio-menu {
@@ -37,19 +45,19 @@ body {
     font-size: 100%;
     font-family: 'Text Me One', sans-serif;
     font-weight: 500;
-    color: #FAFAFA;
-    background-color: #757575;
+    color: #FCFAFC;
+    background-color: #F45A64;
 }
 
 .portfolio-menu-link:hover {
-    color: #757575;
-    background-color: #FAFAFA;
+    color: #F45A64;
+    background-color: #FCFAFC;
 }
 
 .portfolio-menu-link-selected {
     font-size: 110%;
-    color: #757575;
-    background-color: #FAFAFA;
+    color: #F45A64;
+    background-color: #FCFAFC;
 }
 
 /* PROFILE SECTION */
@@ -65,6 +73,7 @@ body {
 .portfolio-icons {
     margin-left: 1%;
     margin-right: 1%;
+    color: #F45A64;
 }
 
 /* .portfolio-profile-description-holder {} */
@@ -74,7 +83,7 @@ body {
     padding: 0.5%;
     font-size: 125%;
     font-family: 'Cantora One', sans-serif;
-    color: #9E9E9E;
+    color: #2F4D75;
 }
 
 .portfolio-small-font {
@@ -101,7 +110,7 @@ body {
 .portfolio-percentage-bar-background {
     height: 10px;
     width: 100%;
-    background-color: #BDBDBD;
+    background-color: #F45A64;
 }
 
 .portfolio-percentage-bar{
@@ -109,7 +118,7 @@ body {
     top: -5px;
     left: 0;
     height: 20px;
-    background-color: #9E9E9E;
+    background-color: #2F4D75;
 }
 
 .portfolio-javascript-percentage {
@@ -168,13 +177,13 @@ body {
 
 .portfolio-project-images{
     margin: 4%;
-    border: 5px solid #9E9E9E;
+    border: 2px solid #F45A64;
 }
 
 .portfolio-footer {
     font-family: 'Cantora One', sans-serif;
     font-weight: 400;
-    color: #757575;
+    color: #2F4D75;
 }
 
 .portfolio-project-description{
@@ -185,7 +194,7 @@ body {
 
 .portfolio-header {
     font-family: 'Cantora One', sans-serif;
-    color: #757575;
+    color: #2F4D75;
 }
 
 .portfolio-align-center {
@@ -297,7 +306,7 @@ body {
         text-align: center;
         font-family: 'Cantora One', sans-serif;
         font-weight: 600;
-        color: #F5F5F5;
+        color: #FCFAFC;
     }
 }
 
@@ -309,7 +318,7 @@ body {
         text-align: center;
         font-family: 'Cantora One', sans-serif;
         font-weight: 600;
-        color: #F5F5F5;
+        color: #FCFAFC;
     }
 
     .portfolio-profile-holder {
@@ -329,13 +338,13 @@ body {
         text-align: center;
         font-family: 'Cantora One', sans-serif;
         font-weight: 600;
-        color: #F5F5F5;
+        color: #FCFAFC;
     }
 
     .portfolio-menu-holder {
         margin-top: 0;
         height: 50px;
-        background-color: #9E9E9E;
+        background-color: #345581;
     }
 
     .portfolio-profile-holder {
