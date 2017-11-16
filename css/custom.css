@@ -66,8 +66,6 @@ body {
     animation: section-fade-in 1.2s ease-out;
 }
 
-/* DEPRECATED ENDS */
-
 .portfolio-profiles-holder {
     margin: 1% 1% 2% 1%;
     width: 98%;
@@ -173,10 +171,6 @@ body {
     text-decoration: none;
 }
 
-.portfolio-project-holder {
-    margin-top:30%;
-}
-
 .portfolio-project-images{
     margin: 4%;
     border: 2px solid #F45A64;
@@ -190,6 +184,18 @@ body {
 
 .portfolio-project-description{
     font-size: 130%;
+}
+
+.portfolio-projects-holder {
+    margin: 2.5% 1% 2.5% 1%;
+    width: 98%;
+    height: 80vh;
+}
+
+.portfolio-project-holder {
+    padding: 2%;
+    width: 96%;
+    height: 38vh;
 }
 
 /* COMMON STYLES */
@@ -354,10 +360,6 @@ body {
         color: #FCFAFC;
     }
 
-    .portfolio-project-holder {
-        margin-top:10%;
-    }
-
     .portfolio-footer-nav-icon {
         width: 50%;
         margin: 0 auto;
@@ -380,10 +382,6 @@ body {
         margin-top: 0;
         height: 50px;
         background-color: #345581;
-    }
-
-    .portfolio-project-holder {
-        margin-top:15%;
     }
 
     .portfolio-footer-nav-icon {
