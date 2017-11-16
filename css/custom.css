@@ -391,4 +391,8 @@ body {
         margin: 0 auto;
         font-size: 2rem;
     }
+
+    #portfolio-resume-download-link {
+        display: none;   
+    }
 }
