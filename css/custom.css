@@ -4,6 +4,7 @@
 #FCFAFC - light blue grey - "Prim"
 #2F4D75 - dark blue - "San Juan"
 #345581 - dark blue(+1) - "Chambray"
+#EEF3F8 - light blue white - "Catskill White"
 */
 
 body {
@@ -74,6 +75,7 @@ body {
 .portfolio-profile-holder {
     margin-top: 45%;
     width: 100%;
+    color: #2F4D75;
 }
 
 .portfolio-profile-description {
@@ -166,7 +168,12 @@ body {
 }
 
 .portfolio-project-link {
-    text-decoration: none;
+    color: #F45A64;
+    font-size: 80%;
+}
+
+.portfolio-project-link:hover {
+    color: #2F4D75;
 }
 
 .portfolio-project-images{
@@ -182,30 +189,41 @@ img {
 .portfolio-description {
     font-family: 'Cantora One', sans-serif;
     font-weight: 400;
-    color: #2F4D75;
 }
 
-/* .portfolio-project-description{
+.portfolio-project-description{
+    margin:0%;
+    padding: 1%;
     font-size: 130%;
-} */
+}
 
 .portfolio-projects-holder {
-    margin: 2.5% 1% 2.5% 1%;
-    width: 98%;
-    height: 80vh;
+    margin: 6% 2%;
+    width: 96%;
 }
 
 .portfolio-project-holder {
-    padding: 2%;
-    width: 96%;
-    height: 36vh;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    height: 240px;
+    background-color: #EEF3F8;
+    color: #2F4D75;
+}
+
+.portfolio-project-holder:hover{
+    color: #F45A64;
+}
+
+.portfolio-project-header {
+    padding: 0.5% 0%;
 }
 
 /* COMMON STYLES */
 
 .portfolio-headings {
     font-family: 'Cantora One', sans-serif;
-    color: #2F4D75;
 }
 
 .portfolio-align-center {
@@ -373,6 +391,15 @@ img {
         margin-top: 10%;
         width: 100%;
     }
+
+    .portfolio-projects-holder {
+        margin: 3% 2%;
+        width: 96%;
+    }
+
+    .portfolio-md-push-holder-up {
+        margin-bottom: 20%;
+    }
 }
 
 /* FOR SMALL SCREEN */
@@ -406,7 +433,24 @@ img {
         width: 100%;
     }
 
-    .portfolio-push-holder-up {
+    .portfolio-sm-push-holder-up {
         margin-bottom: 20%;
+    }
+
+    .portfolio-sm-push-holder-down {
+        margin-bottom: 0%
+    }
+
+    .portfolio-projects-holder {
+        margin: 2%;
+        width: 96%;
+    }
+
+    .portfolio-project-holder {
+        margin-top: 6%;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+        height: 240px;
     }
 }
