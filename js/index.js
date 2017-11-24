@@ -6,14 +6,13 @@ var main = function(){
         skillsLink : menuLinkItem[1],
         projectLink : menuLinkItem[2]
     };
-    var menuSelected = menuObject.skillsLink;
+    var menuSelected = menuObject.profileLink;
 
     var profileSection = document.getElementById('portfolio-profile');
     var skillsSection = document.getElementById('portfolio-skills');
     var projectSection = document.getElementById('portfolio-projects');
 
-    var sectionVisible = skillsSection;
-
+    var sectionVisible = profileSection;
 
     menuList.addEventListener('click', function (event) {
         if (event.target !== event.currentTarget) {
@@ -47,6 +46,8 @@ var main = function(){
         ele.classList.remove('portfolio-hide');
         sectionVisible = ele;
     }
+
+    updateDisplay(menuSelected,sectionVisible);
 };
 
 window.addEventListener('load', main);

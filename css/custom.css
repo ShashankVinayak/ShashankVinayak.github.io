@@ -4,7 +4,7 @@
 #FCFAFC - light blue grey - "Prim"
 #2F4D75 - dark blue - "San Juan"
 #345581 - dark blue(+1) - "Chambray"
-#EEF3F8 - light blue white - "Catskill White"
+#F7F7F7 - light gray - "Alabaster"
 */
 
 body {
@@ -100,6 +100,7 @@ body {
 .portfolio-skill-holder {
     margin-top: 10%;
     margin-bottom: 20%;
+    color: #2F4D75;
 }
 
 .portfolio-percentage-holder{
@@ -208,7 +209,7 @@ img {
     margin-right: 1%;
     width: 98%;
     height: 240px;
-    background-color: #EEF3F8;
+    background-color: #F7F7F7;
     color: #2F4D75;
 }
 
