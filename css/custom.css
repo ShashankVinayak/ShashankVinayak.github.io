@@ -5,6 +5,7 @@
 #2F4D75 - dark blue - "San Juan"
 #345581 - dark blue(+1) - "Chambray"
 #F7F7F7 - light gray - "Alabaster"
+#E6E6E6 - light gray(-2) - "Mercury"
 */
 
 body {
@@ -91,75 +92,44 @@ body {
 }
 
 /* SKILLS SECTION */
-
-#portfolio-skills {
-    margin-top: 2%;
-    animation: section-fade-in 1.2s ease-out;
-}
-
-.portfolio-skill-holder {
-    margin-top: 10%;
-    margin-bottom: 20%;
-    color: #2F4D75;
-}
-
-.portfolio-percentage-holder{
+.portfolio-skills-holder{
     position: relative;
-    margin: 4%;
-}
-
-.portfolio-percentage-bar-background {
-    height: 10px;
     width: 100%;
-    background-color: #F45A64;
+    margin-top: 15%;
 }
 
-.portfolio-percentage-bar{
-    position: absolute;
-    top: -5px;
-    left: 0;
-    height: 20px;
+.portfolio-skill{
+    margin:0 20%;
+    padding:8% 1%;
+}
+
+.portfolio-skill-background{
+    padding:1%;
+    height: 50px;
     background-color: #2F4D75;
 }
 
-.portfolio-javascript-percentage {
-    width: 65%;
-    animation: js-bar-fill 1.5s ease-out;
+.portfolio-skill-name{
+    margin:3%;
+    font-size: 175%;
+    color: #F7F7F7;
 }
 
-.portfolio-html-percentage {
-    width: 80%;
-    animation: html-bar-fill 1.5s ease-out;
+.portfolio-bgbar{
+    position: absolute;
+    top:5%;
+    width: 20px;
+    height: 90%;
+    background-color: #F45A64;
+    z-index: -1;
 }
 
-.portfolio-css-percentage {
-    width: 80%;
-    animation: css-bar-fill 1.5s ease-out;
+.portfolio-bgbar-left{
+    left: 25%;
 }
 
-.portfolio-blender3d-percentage {
-    width: 55%;
-    animation: blender3d-bar-fill 1.5s ease-out;
-}
-
-.portfolio-unity3d-percentage {
-    width: 45%;
-    animation: unity3d-bar-fill 1.5s ease-out;
-}
-
-.portfolio-photoshop-percentage {
-    width: 45%;
-    animation: photoshop-bar-fill 1.5s ease-out;
-}
-
-.portfolio-java-percentage {
-    width: 60%;
-    animation: java-bar-fill 1.5s ease-out;
-}
-
-.portfolio-c-percentage {
-    width: 60%;
-    animation: c-bar-fill 1.5s ease-out;
+.portfolio-bgbar-right{
+    left: 70%;
 }
 
 /* PROJECTS SECTION */
@@ -204,13 +174,13 @@ img {
 }
 
 .portfolio-project-holder {
-    margin-top: 2%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 3% 1% 4% 1%;
     width: 98%;
     height: 240px;
     background-color: #F7F7F7;
     color: #2F4D75;
+
+    box-shadow: 0 0 3px 1px #E6E6E6;
 }
 
 .portfolio-project-holder:hover{
@@ -260,98 +230,6 @@ img {
     color: #F45A64;
 }
 
-/* ANIMATIONS */
-
-@keyframes section-fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes js-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes html-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes css-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes blender3d-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 55%;
-    }
-}
-
-@keyframes unity3d-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 45%;
-    }
-}
-
-@keyframes photoshop-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 45%;
-    }
-}
-
-@keyframes java-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes c-bar-fill {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 60%;
-    }
-}
-
 /* MEDIA QUERIES  */
 /* FOR LARGE SCREEN */
 @media screen and (max-width: 79.99em) {
@@ -362,6 +240,12 @@ img {
         font-family: 'Cantora One', sans-serif;
         font-weight: 600;
         color: #FCFAFC;
+    }
+
+    .portfolio-skills-holder{
+        position: relative;
+        width: 100%;
+        margin-top: 22%;
     }
 
     .portfolio-footer-nav-icon {
@@ -399,7 +283,18 @@ img {
     }
 
     .portfolio-md-push-holder-up {
-        margin-bottom: 20%;
+        margin-bottom: 15%;
+    }
+
+    .portfolio-skills-holder{
+        position: relative;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .portfolio-skill-md-push-down {
+        margin:0 20% 10% 20%;
+        padding:8% 1%;
     }
 }
 
@@ -435,7 +330,7 @@ img {
     }
 
     .portfolio-sm-push-holder-up {
-        margin-bottom: 20%;
+        margin-bottom: 15%;
     }
 
     .portfolio-sm-push-holder-down {
@@ -453,5 +348,16 @@ img {
         margin-right: 1%;
         width: 98%;
         height: 240px;
+    }
+
+    .portfolio-skills-holder{
+        position: relative;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .portfolio-skill-md-push-down {
+        margin:0 20% 10% 20%;
+        padding:8% 1%;
     }
 }
